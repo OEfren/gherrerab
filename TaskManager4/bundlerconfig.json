@@ -1,0 +1,65 @@
+[
+    {
+        "outputFilname": "wwwroot/css/site.min.css",
+        "inputFiles": [
+            "wwwroot/css/site.css"
+
+        ]
+    },
+    {
+        "outputFilname": "wwwroot/css/adminlte.min.css",
+        "inputFiles": [
+            "wwwroot/css/adminlte.css"
+
+        ]
+    },
+    {
+        "outputFilname": "wwwroot/css/all.min.css",
+        "inputFiles": [
+            "wwwroot/css/all.css"
+
+        ]
+    },
+    {
+        "outputFilname": "wwwroot/css/boostrap.min.css",
+        "inputFiles": [
+            "wwwroot/css/boostrap.css"
+
+        ]
+    },
+    {
+        "outputFilname": "wwwroot/css/boostrap-theme.min.css",
+        "inputFiles": [
+            "wwwroot/css/boostrap-theme.css"
+
+        ]
+    },
+    {
+        "outputFilname": "wwwroot/css/OverlayScrollbars.min.css",
+        "inputFiles": [
+            "wwwroot/css/OverlayScrollbars.css"
+
+        ]
+    },
+
+    {
+        "outputFilname": "wwwroot/js/site.min.js",
+        "inputFiles": [
+            "wwwroot/js/site.js",
+            "wwwroot/js/adminlte.js",
+            "wwwroot/js/adminlte.min.js",
+            "wwwroot/js/bootstrap.js",
+            "wwwroot/js/bootstrap.bundle.js",
+            "wwwroot/js/bootstrap.min.js",
+            "wwwroot/js/dashboard.js",
+            "wwwroot/js/modernizr-2.8.3.js",
+            "wwwroot/js/OverlayScrollbars.js",
+            "wwwroot/js/OverlayScrollbars.min.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        },
+        "sourcemap": false
+    }
+]

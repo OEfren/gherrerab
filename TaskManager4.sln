@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager4", "TaskManager4\TaskManager4.csproj", "{566EF830-E00C-4A27-A999-7A9FB90335FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{1CF8FD79-F625-4D4E-B390-378CB904E328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1E2FFD7C-6BF5-4AA9-A4A3-A5D32741BD80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566EF830-E00C-4A27-A999-7A9FB90335FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566EF830-E00C-4A27-A999-7A9FB90335FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566EF830-E00C-4A27-A999-7A9FB90335FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566EF830-E00C-4A27-A999-7A9FB90335FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF8FD79-F625-4D4E-B390-378CB904E328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF8FD79-F625-4D4E-B390-378CB904E328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF8FD79-F625-4D4E-B390-378CB904E328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF8FD79-F625-4D4E-B390-378CB904E328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2FFD7C-6BF5-4AA9-A4A3-A5D32741BD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2FFD7C-6BF5-4AA9-A4A3-A5D32741BD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2FFD7C-6BF5-4AA9-A4A3-A5D32741BD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2FFD7C-6BF5-4AA9-A4A3-A5D32741BD80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1990051F-9FC0-4942-ACFC-24A0897BDB16}
+	EndGlobalSection
+EndGlobal

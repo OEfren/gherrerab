@@ -1,0 +1,18 @@
+﻿@model TipoActividadViewModel
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Crear Tipo de Actividad";
+}
+<div class="align-content-xl-center">
+    <h2>Nuevo Tipo de Actividad </h2>
+    <form asp-action="Insert" method="post">
+        <div class="form-group">
+            <label asp-for="tipo_actividad">Area de Trabajo</label>
+            <input class="form-control" type="text" asp-for="tipo_actividad" required />
+        </div>
+        <div>
+            <button class="btn btn-outline-success" type="submit"> Crear</button>
+        </div>
+
+    </form>
+</div>

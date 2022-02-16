@@ -1,0 +1,67 @@
+﻿@model List<Usuario>
+<script>
+    function enviame(laUrl, elId) {
+        var elform = document.getElementById("MiForm");
+        var eldato = document.getElementById("id");
+        eldato.value = elId;
+        elform.action = laUrl;
+        elform.submit();
+    }
+</script>
+
+<div class="content-header">
+    <h2>Panel de Tareas</h2>
+</div>
+<form action="/Tareas/Individual" id="MiForm" name="MiForm" method="post">
+    <input type="hidden" id="id" name="id" value="" />
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                @foreach (var m in Model)
+                {
+                    Random myObject = new Random();
+                    int resultado = myObject.Next(1, 200);
+
+                    var respuesta = " ";
+                    if (resultado >= 151)
+                    {
+                        respuesta = "small-box bg-info";
+                    }
+                    else if (resultado >= 101)
+                    {
+                        respuesta = "small-box bg-success";
+                    }
+                    else if (resultado >= 51)
+                    {
+                        respuesta = "small-box bg-warning";
+                    }
+                    else
+                    {
+                        respuesta = "small-box bg-danger";
+                    }
+                    string respuestas = respuesta.ToString();
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="@respuestas">
+                            <div class="inner">
+                                <h3>150</h3>
+
+                                <p>
+                                    @m.nombre
+                                    @m.apellidos
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-android-person"></i>
+                            </div>
+                            <a href="javascript:enviame('/Tareas/Individual', '@m.id_usuario')" data-id="@m.id_usuario" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </section>
+</form>

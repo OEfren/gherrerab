@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+@model LoginViewModel
+
+<h2>Login</h2>
+
+<div class="container">
+    @{
+        if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Message
+            </div>
+        }
+    }
+    <section>
+        <div class="col-md-12">
+            <form asp-controller="Login" asp-action="Valida" id="Login" method="post">
+                <h4>Iniciar Sesi&oacute;n</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="usuario">Usuario</label>
+                    <input asp-for="usuario" class="form-control" type="email" name="usuario" value="" />
+                    <span asp-validation-for="usuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="password">Password</label>
+                    <input asp-for="password" class="form-control" type="password" name="password" value="" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <label id="indexMessage" class="error">@Html.DisplayFor(m => m.ErrorMessage)</label>
+
+</div>

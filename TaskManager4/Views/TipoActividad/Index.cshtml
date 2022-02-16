@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Task Manager";
+
+
+}
+<div class="row">
+
+    <div class="col-md-12">
+        <a asp-action="Create" class="btn btn-primary">Crear Tipo Actividad Nueva</a>
+        <hr />
+        @await Component.InvokeAsync("ShowTipoActividad")
+    </div>
+
+
+</div>

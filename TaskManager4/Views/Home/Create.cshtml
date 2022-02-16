@@ -1,0 +1,38 @@
+﻿@model UsuarioViewModel
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Crear Usuarios";
+}
+<div class="align-content-xl-center">
+    <h2>Nuevo Usuario</h2>
+    <form asp-action="Insert" method="post">
+        <div class="form-group">
+            <label asp-for="usuario">Email</label>
+            <input class="form-control" type="email" asp-for="usuario" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="password">Password</label>
+            <input class="form-control" type="password" asp-for="password" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="nombre">Nombre</label>
+            <input class="form-control" type="text" asp-for="nombre" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="apellidos">Apellidos</label>
+            <input class="form-control" type="text" asp-for="apellidos" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="tipo_usuario">Tipo Usuario</label>
+            <select class="form-control" asp-for="tipo_usuario">
+                <option class="form-control" value="1" asp-for="tipo_usuario">SuperAdministrador</option>
+                <option class="form-control" value="2" asp-for="tipo_usuario">Administrador</option>
+                <option class="form-control" value="3" asp-for="tipo_usuario">Desarrollador</option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-outline-success" type="submit"> Guardar</button>
+        </div>
+
+    </form>
+</div>
